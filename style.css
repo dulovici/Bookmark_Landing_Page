@@ -504,6 +504,12 @@ footer {
         main .text {
             text-align: center;
         }
+        .f-img {
+            z-index: 10;
+        }
+        .feature-left .blue-thing {
+            z-index: 1;
+        }
 
     /* ============= */
     .article-1 {
