@@ -1,6 +1,3 @@
-
-'use strict'
-
 // DATA
 const featuresDta = [
     {
@@ -40,6 +37,9 @@ const QNA = [
     }
 ];
 
+
+(function () {
+'use strict'
 
 // DOM ELEMENTS
 // Features - Section;
@@ -114,13 +114,6 @@ function checkEmail() {
     email.placeholder = 'email@example/com';
 }
 
-function subscribe() {
-    
-}
-
-
-
-
 
 renderQAF()
 // Events
@@ -129,3 +122,6 @@ features.forEach(el => {
 })
 
 submit.addEventListener('click', checkEmail);
+})()
+
+
