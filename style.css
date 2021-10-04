@@ -24,7 +24,9 @@ body {
 /* LAYOUT */
 
 /* NAV */
-
+/* .global {
+    padding: 0 15px;
+} */
 nav {
     margin-bottom: 6em;
 }
@@ -46,7 +48,7 @@ nav {
         cursor: pointer;
         font-size: .8rem;
     }
-     a {
+    a {
         text-decoration: none;
         color: var(--black);
     }
@@ -427,6 +429,13 @@ footer {
     .footer-list li:hover{
         color: var(--red);
     }
+    .footer-list a {
+        text-decoration: none;
+        color: var(--white);
+    }
+    .footer-list a:hover{
+        color: var(--red);
+    }
 
 
 .footer-icons {
@@ -439,3 +448,184 @@ footer {
     cursor: pointer;
 }
 
+/* QUERIES */
+@media (max-width: 960px) {
+    nav {
+        padding: 0 2em;
+    }
+    
+/* ============ */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+        header .text {
+            order: 2;
+            margin-top: 48px;
+        }
+        .text .btns {
+            text-align: center;
+        }
+/* ============= */
+
+    .feature-tabs {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 320px;
+    }
+    .feature-tabs a {
+        border: none;
+        border-bottom: 1px solid #c4c3c3;
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .active {
+        border-bottom: 1px solid var(--red) !important;
+    }
+        .feature-tabs .searching {
+            margin: 0;
+        }
+        .feature-tabs .bookmarking {
+            border-top: 1px solid #c4c3c3;
+        }
+
+    /* ============= */
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        main .art {
+            margin-bottom: 130px;
+        }
+        main .text {
+            text-align: center;
+        }
+
+    /* ============= */
+    .article-1 {
+        margin-top: 300px;
+    }
+    .extention-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ============= */
+
+    .sing-form {
+        flex-direction: column;
+    }   
+        .error-wr {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .error-wr input {
+            width: 100%;
+        }
+        .submit {
+            width: 100%;
+        }
+
+    /* ============= */
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-wr {
+        flex-direction: column;
+        align-items: center; 
+        margin: 0;
+    }
+        .footer-wr img {
+            width: 12em;
+        }
+        .footer-wr li {
+            display: list-item;
+            margin: 0;
+            font-size: 18px;
+            letter-spacing: 2.7px;
+            margin-top: 20px;
+            /* margin-left: 50px; */
+        }
+    .footer-icons {
+        /* display: block; */
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 50px;
+        width: 120px;
+        /* margin-left: 30px; */
+    }
+    .footer-icons img {
+        margin: 0;
+    }
+}
+
+@media(max-width: 700px) {
+    nav .nav-list {
+        display: none;
+    }
+    nav .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 560px) {
+    
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    p {
+        font-size: 15px;
+    }
+    header {
+        max-width: 311px;
+    }
+    .right-part {
+        max-width: 311px;
+    }
+    .right-part img {
+        right: 25px;
+        width: 20em;
+    }
+    .right-part .blue-thing {
+        height: 190px;
+    }
+    .left-part .btn-1{
+        margin-bottom: 10px;
+    }
+
+    article {
+        max-width: 311px;
+    }
+
+    main {
+        max-width: 311px;
+    }
+    .feature-left img{
+        width: 300px;
+        left: 120px;
+    }
+    .feature-left .blue-thing {
+        height: 200px;
+    }
+
+    .faq {
+        margin: 0 auto;
+        max-width: 311px;
+    }
+
+    .sing-up-wr {
+        padding: 0 20px;
+    }
+}

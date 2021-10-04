@@ -122,8 +122,6 @@ function subscribe() {
 
 
 
-
-
 renderQAF()
 // Events
 features.forEach(el => {
