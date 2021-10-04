@@ -621,9 +621,11 @@ footer {
     .feature-left img{
         width: 300px;
         left: 120px;
+        z-index: 10;
     }
     .feature-left .blue-thing {
         height: 200px;
+        z-index: 1;
     }
 
     .faq {
