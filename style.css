@@ -24,9 +24,6 @@ body {
 /* LAYOUT */
 
 /* NAV */
-.global {
-
-}
 
 nav {
     margin-bottom: 6em;
@@ -49,6 +46,16 @@ nav {
         cursor: pointer;
         font-size: .8rem;
     }
+     a {
+        text-decoration: none;
+        color: var(--black);
+    }
+    a:hover{
+        color: var(--red);
+    }
+    .nav-list li:hover{
+        color: var(--red);
+    }
     .nav-list .login {
         background-color: var(--red);
         color: var(--white);
@@ -66,6 +73,9 @@ nav {
     }
 
 /* HEADER */
+.global {
+    overflow: hidden;
+}
 
 header {
     max-width: 1104px;
@@ -117,6 +127,7 @@ header {
     position: relative;
     max-width: 540px;
     overflow: hidden;
+    overflow: visible;
 }
     .art .blue-thing {
         z-index: 0;
@@ -181,13 +192,20 @@ main {
     margin: 0 auto;
     display: flex;
     margin-bottom: 100px;
+    height: 500px;
+    
 }
     .feature-left {
         order: 1;
         transform: rotateY(180deg);
+        min-width: 540px;
+        overflow: visible;
+        
     }
     .feature-left img {
         transform: rotateY(180deg);
+        width: 400px;
+        left: 100px;
     }
     .feature-right {
         order: 2;
@@ -267,6 +285,7 @@ main {
        padding-top: 19px;
        cursor: pointer;
     }
+
     .faq .ques{
         display: flex;
         align-items: center;
@@ -280,11 +299,21 @@ main {
         font-size: 16px;
         line-height: 36px;
         margin-bottom: 10px    ;
-        /* display: none; */
-    }
-    .hide {
         display: none;
     }
+
+    /* DYNAMIC CLASSES */
+    .open .ques p {
+        font-weight: 600;
+    }
+    .open .ques img {
+        transform: scaleY(-1);
+    }
+    .open .answ {
+        display: block;
+    }
+    /* =============== */
+
     .faq-wr button {
         display: block;
         margin: 0 auto;
@@ -325,13 +354,39 @@ main {
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
     }
+    /* ERROR CLASS */
+    .throw p {
+        display: block !important;
+    }
+    .throw input {
+        background-image: url(./images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: center right 10px;
+    }
+    /*  */
+
+    .error-wr {
+        background-color: var(--red);
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        
+    }
+    
+        .error-wr .err-msg {
+            margin: .4em;
+            padding-left: .5em;
+            display: none;
+        }
         .sing-form input {
             width: 300px;
             border-radius: 5px;
             border: none;
             outline: none;
             padding-left: 1em;
+            padding: 1em;
         }
         .sing-form button {
         background-color: var(--red);
@@ -372,8 +427,12 @@ footer {
     .footer-list li:hover{
         color: var(--red);
     }
+
+
 .footer-icons {
     margin-right: 165px;
+    display: flex;
+    align-items: center;
 }
 .footer-icons img {
     margin-left: 15px;

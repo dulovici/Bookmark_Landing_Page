@@ -17,7 +17,7 @@
         <div class="nav-wr">
             <img src="./images/logo-bookmark.svg" alt="">
             <ul class="nav-list">
-                <li>FEATURS</li>
+                <li><a href="#features">FEATURS</a></li>
                 <li>PRICING</li>
                 <li>CONTACT</li>
                 <li class="login">LOGIN</li>
@@ -43,28 +43,28 @@
     </header>
 
     <article>
-        <h1>Features</h1>
+        <h1 id="features">Features</h1>
         <p>Our aim is to make it quick and easy for you to access your favourite websites. 
         Your bookmarks sync between your devices so you can access them on the go.</p>
     </article>
 
     <div class="feature-tabs">
-        <a class='bookmarking active'>Simple Bookmarking</a>
-        <a class='searching'>Speedy Searching</a>
-        <a class='sharing'>Easy Sharing</a>
+        <a class='ftr bookmarking active'>Simple Bookmarking</a>
+        <a class='ftr searching'>Speedy Searching</a>
+        <a class='ftr shearing'>Easy Shearing</a>
     </div>
 
     <main>
         <div class="feature-right text">
-            <h1>Bookmark in one click</h1>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            <h1 class="f-title">Bookmark in one click</h1>
+            <p class="f-text">Organize your bookmarks however you like. Our simple drag-and-drop interface 
             gives you complete control over how you manage your favourite sites.</p>
             <div class="btns">
                 <button class="btn-1">More Info</button>
             </div>
         </div>
         <div class="feature-left art">
-            <img src="./images/illustration-hero.svg" alt="">
+            <img class="f-img" src="./images/illustration-features-tab-1.svg" alt="">
             <div class="blue-thing"></div>
         </div>
     </main>
@@ -104,7 +104,52 @@
         </article>
 
         <ul class="faq">
-            <li>
+            <!-- RENDER FROM JS -->
+        </ul>
+
+        <button class="blue-btn">More Info</button>
+    </div>
+
+
+    <section class="sing-up-wr">
+        <div class="sing-up">
+            <p>35.000+ ALREADY JOINED</p>
+            <h2>Stay up-to-date with what <br> we're doing</h2>
+            <div class="sing-form">
+                <div class="error-wr">
+                    <input class="email" type="text" placeholder="Enter your email adress">
+                    <p class="err-msg">Whoops, make sure it's an email</p>
+                </div>
+                <button class="submit">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wr">
+            <img src="./images/logo-bookmark-light.svg" alt="">
+            <ul class="footer-list">
+                <li>FEATURS</li>
+                <li>PRICING</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="footer-icons">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+            <!-- <li>
                 <div class="ques">
                     <p>What is Bookmark?</p>
                     <img class="q-btn" src="./images/icon-arrow.svg" alt="">
@@ -138,39 +183,4 @@
                 </div>
                 <p class="answ hide">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
                 vitae neque eget nisl gravida pellentesque non ut velit.</p>
-            </li>
-            
-        </ul>
-
-        <button class="blue-btn">More Info</button>
-    </div>
-
-
-    <section class="sing-up-wr">
-        <div class="sing-up">
-            <p>35.000+ ALREADY JOINED</p>
-            <h2>Stay up-to-date with what <br> we're doing</h2>
-            <div class="sing-form">
-                <input type="text" placeholder="Enter your email adress">
-                <button>Contact Us</button>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-wr">
-            <img src="./images/logo-bookmark-light.svg" alt="">
-            <ul class="footer-list">
-                <li>FEATURS</li>
-                <li>PRICING</li>
-                <li>CONTACT</li>
-            </ul>
-        </div>
-        <div class="footer-icons">
-            <img src="./images/icon-facebook.svg" alt="">
-            <img src="./images/icon-twitter.svg" alt="">
-        </div>
-    </footer>
-</div>
-</body>
-</html>
+            </li> -->
