@@ -315,6 +315,7 @@ main {
     }
     .open .ques img {
         transform: scaleY(-1);
+        filter: invert(37%) sepia(70%) saturate(991%) hue-rotate(310deg) brightness(100%) contrast(100%);
     }
     .open .answ {
         display: block;
@@ -447,6 +448,9 @@ footer {
     margin-right: 165px;
     display: flex;
     align-items: center;
+}
+.footer-icons img:hover {
+    filter: invert(37%) sepia(70%) saturate(991%) hue-rotate(310deg) brightness(100%) contrast(100%);
 }
 .footer-icons img {
     margin-left: 15px;
@@ -611,6 +615,9 @@ footer {
         .error-wr input {
             width: 100%;
         }
+        .error-wr input:focus::placeholder {
+            color: rgb(0, 0, 0);
+        }
         .submit {
             width: 100%;
         }
@@ -665,9 +672,11 @@ footer {
     h1 {
         font-size: 30px;
         text-align: center;
+        line-height: 40px;
     }
     p {
         font-size: 15px;
+        line-height: 25px !important;
     }
     header {
         max-width: 311px;
@@ -685,6 +694,11 @@ footer {
     .left-part .btn-1{
         margin-bottom: 10px;
     }
+    .left-part .btns button{
+        width: 10em;
+        padding: 1em;
+    }
+    
 
     article {
         max-width: 311px;
@@ -710,5 +724,8 @@ footer {
 
     .sing-up-wr {
         padding: 0 20px;
+    }
+    .sing-up h2 {
+        font-size: 26px;
     }
 }
