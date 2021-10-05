@@ -23,10 +23,7 @@ body {
 
 /* LAYOUT */
 
-/* NAV */
-/* .global {
-    padding: 0 15px;
-} */
+
 nav {
     margin-bottom: 6em;
 }
@@ -448,6 +445,78 @@ footer {
     cursor: pointer;
 }
 
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100vw;
+    overflow: auto;
+    background-color: #242a45f5;
+    padding: 2em;
+    /* background-color: #242a45c2; */
+}
+    .modal-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-menu .hdr {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+    .hdr .close {
+        color: var(--white);
+        font-size: 2em;
+    }
+    .modal-list {
+        text-align: center;
+        color: var(--white);
+        width: 100%;
+    }
+    .modal-list a {
+        color: var(--white);
+        border: none !important;
+    }
+    .modal-list li {
+        
+        font-size: 20px;
+        letter-spacing: 2.3px;
+        padding: 25px 0 25px 0;
+        list-style: none;
+        border-bottom: 1px solid rgba(224, 222, 222, 0.548);
+    }
+    .modal-list :first-child {
+        border-top: 1px solid rgba(224, 222, 222, 0.548);;
+    }
+    .modal-menu button {
+        width: 100%;
+        background-color: transparent;
+        border: 3px solid var(--white);
+        color: var(--white);
+        padding: 1.2em;
+        margin-top: 2em;
+        border-radius: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .modal-icons {
+        margin-top: 220px;
+        display: flex;
+        gap: 50px;
+    }
+    .pop {
+        display: block;
+    }
+
 /* QUERIES */
 @media (max-width: 960px) {
     nav {
@@ -559,16 +628,13 @@ footer {
             font-size: 18px;
             letter-spacing: 2.7px;
             margin-top: 20px;
-            /* margin-left: 50px; */
         }
     .footer-icons {
-        /* display: block; */
         display: flex;
         justify-content: space-between;
         margin: 0;
         margin-top: 50px;
         width: 120px;
-        /* margin-left: 30px; */
     }
     .footer-icons img {
         margin: 0;
@@ -584,6 +650,7 @@ footer {
         cursor: pointer;
     }
 }
+
 
 @media (max-width: 560px) {
     

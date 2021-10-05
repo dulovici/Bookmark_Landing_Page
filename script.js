@@ -49,11 +49,14 @@ const text = document.querySelector('.f-text');
 const img = document.querySelector('.f-img');
 // FAQ - Section;
 const faqList = document.querySelector('.faq');
-const faqLI = document.querySelectorAll('.faq li')
 // Verification - Section;
 const container = document.querySelector('.error-wr')
 const email = document.querySelector('.email');
 const submit = document.querySelector('.submit');
+// Modal - Section
+const modal = document.querySelector('.modal')
+const hamburger =  document.querySelector('.hamburger');
+const closeMenu = document.querySelector('.close');
 
 // ============================================
 function openFeature() {
@@ -114,6 +117,13 @@ function checkEmail() {
     email.placeholder = 'email@example/com';
 }
 
+function openModal() {
+    modal.classList.add('pop')
+}
+function closeModal() {
+    modal.classList.remove('pop')
+}
+
 
 renderQAF()
 // Events
@@ -122,6 +132,10 @@ features.forEach(el => {
 })
 
 submit.addEventListener('click', checkEmail);
+
+hamburger.addEventListener('click', openModal)
+
+closeMenu.addEventListener('click', closeModal)
 })()
 
 
