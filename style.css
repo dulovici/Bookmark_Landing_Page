@@ -25,7 +25,7 @@ body {
 .global {
     overflow: hidden;
 }
-
+/* NAV */
 nav {
     margin-bottom: 6em;
 }
@@ -74,14 +74,11 @@ nav {
     }
 
 /* HEADER */
-
-
 header {
     max-width: 1104px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 100px;
-    
 }
 .text {
     max-width: 540px;
@@ -124,7 +121,6 @@ header {
     .text .btn-2:hover {
         border: 1px solid var(--black);
     }
-
 .art {
     position: relative;
     max-width: 540px;
@@ -150,7 +146,6 @@ header {
 
 
 /* ARTICLE */
-
 article {
     max-width: 540px;
     margin: 0 auto 72px;
@@ -166,7 +161,6 @@ article {
     }
 
 /* FEATURES */
-
 .feature-tabs {
     margin: 0 auto;
     max-width: 730px;
@@ -181,13 +175,10 @@ article {
         padding: 0 1.5em 1.5em 1.5em;
         cursor: pointer;
     }
+    .feature-tabs a:hover{color: var(--red);}
+
     .active {border-bottom: 3px solid var(--red);}
-    .feature-tabs a:hover{
-        color: var(--red);
-    }
-        .searching {
-            margin-right: 60px;
-        }
+    .searching { margin-right: 60px;}
 
 main {
     max-width: 1104px;
@@ -195,7 +186,6 @@ main {
     display: flex;
     margin-bottom: 100px;
     height: 500px;
-    
 }
     .feature-left {
         order: 1;
@@ -204,7 +194,7 @@ main {
         overflow: visible;
         
     }
-    .feature-left img {
+    .feature-left .f-img {
         transform: rotateY(180deg);
         width: 400px;
         left: 100px;
@@ -214,9 +204,7 @@ main {
         padding-right: 1.5em;
     }
 
-
 /* CARDS */
-
 .extention-cards {
     margin: 50px auto 150px;
     max-width: 911px;
@@ -249,7 +237,6 @@ main {
         padding-bottom:  32px;
         width: 100%;
         border-bottom: 5px dotted rgb(219, 216, 216);
-        /* margin-bottom: 24px; */
     }
     .blue-btn {
         border: 1px solid var(--blue);
@@ -266,25 +253,17 @@ main {
         border: 1px solid var(--blue);
         color: var(--blue);
     }
-
-    .c1 {
-        margin-bottom: 60px;
-    }
-    .c2 {
-        margin-bottom: 30px;
-    }
+    .c1 {margin-bottom: 60px;}
+    .c2 { margin-bottom: 30px;}
 
 /* FAQ */
 .faq-wr {
     max-width: 540px;
     margin: 0 auto 150px;
-    
 }   
-
     .faq li {
        list-style: none; 
        border-top: 1px solid rgb(207, 207, 207);
-       /* padding-bottom: 5px; */
        padding-top: 19px;
        cursor: pointer;
     }
@@ -292,16 +271,14 @@ main {
         border-bottom: 1px solid rgb(207, 207, 207);
         margin-bottom: 2em;
     }
-
     .faq .ques{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
     }
-        .ques:hover {
-            color: var(--red);
-        }
+        .ques:hover {color: var(--red);}
+
     .faq .answ {
         font-size: 16px;
         line-height: 36px;
@@ -317,11 +294,9 @@ main {
         transform: scaleY(-1);
         filter: invert(37%) sepia(70%) saturate(991%) hue-rotate(310deg) brightness(100%) contrast(100%);
     }
-    .open .answ {
-        display: block;
-    }
-    /* =============== */
+    .open .answ {display: block;}
 
+    /* =============== */
     .faq-wr button {
         display: block;
         margin: 0 auto;
@@ -333,10 +308,7 @@ main {
     }
 
 /* SING UP */
-
-.sing-up-wr {
-    background-color: var(--blue);
-}
+.sing-up-wr {background-color: var(--blue);}
 .sing-up {
     max-width: 420px;
     margin: 0 auto;
@@ -365,24 +337,19 @@ main {
         align-items: flex-start;
     }
     /* ERROR CLASS */
-    .throw p {
-        display: block !important;
-    }
+    .throw p {display: block !important;}
     .throw input {
         background-image: url(./images/icon-error.svg);
         background-repeat: no-repeat;
         background-position: center right 10px;
     }
     /*  */
-
     .error-wr {
         background-color: var(--red);
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        
     }
-    
         .error-wr .err-msg {
             margin: .4em;
             padding-left: .5em;
@@ -396,13 +363,17 @@ main {
             padding-left: 1em;
             padding: 1em;
         }
+        .sing-form input:focus::placeholder {
+            color: black;
+            font-weight: 500;
+        }
         .sing-form button {
-        background-color: var(--red);
-        color: var(--white);
-        padding: 12px 20px;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
+            background-color: var(--red);
+            color: var(--white);
+            padding: 12px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
         }
         .sing-form button:hover {
             background-color: var(--white);
@@ -432,17 +403,12 @@ footer {
         font-size: 13px;
         cursor: pointer;
     }
-    .footer-list li:hover{
-        color: var(--red);
-    }
+    .footer-list li:hover{color: var(--red);}
     .footer-list a {
         text-decoration: none;
         color: var(--white);
     }
-    .footer-list a:hover{
-        color: var(--red);
-    }
-
+    .footer-list a:hover{color: var(--red);}
 
 .footer-icons {
     margin-right: 165px;
@@ -470,7 +436,6 @@ footer {
     overflow: auto;
     background-color: #242a45f5;
     padding: 2em;
-    /* background-color: #242a45c2; */
 }
     .modal-menu {
         display: flex;
@@ -499,7 +464,6 @@ footer {
         border: none !important;
     }
     .modal-list li {
-        
         font-size: 20px;
         letter-spacing: 2.3px;
         padding: 25px 0 25px 0;
@@ -525,16 +489,12 @@ footer {
         display: flex;
         gap: 50px;
     }
-    .pop {
-        display: block;
-    }
+    .pop {display: block;}
 
 /* QUERIES */
 @media (max-width: 960px) {
-    nav {
-        padding: 0 2em;
-    }
-    
+    nav {padding: 0 2em;}
+
 /* ============ */
     header {
         flex-direction: column;
@@ -544,11 +504,8 @@ footer {
             order: 2;
             margin-top: 48px;
         }
-        .text .btns {
-            text-align: center;
-        }
+        .text .btns {text-align: center;}
 /* ============= */
-
     .feature-tabs {
         flex-direction: column;
         justify-content: center;
@@ -562,81 +519,49 @@ footer {
         text-align: center;
         padding-top: 5px;
     }
-    .active {
-        border-bottom: 1px solid var(--red) !important;
-    }
-        .feature-tabs .searching {
-            margin: 0;
-        }
-        .feature-tabs .bookmarking {
-            border-top: 1px solid #c4c3c3;
-        }
-
-    /* ============= */
-
+    .active {border-bottom: 1px solid var(--red) !important;}
+        .feature-tabs .searching {margin: 0;}
+        .feature-tabs .bookmarking {border-top: 1px solid #c4c3c3;}
+/* ============= */
     main {
         flex-direction: column;
         align-items: center;
     }
+        main .art {margin-bottom: 130px;}
+        main .text {text-align: center;}
 
-        main .art {
-            margin-bottom: 130px;
-        }
-        main .text {
-            text-align: center;
-        }
-        .f-img {
-            z-index: 10;
-        }
-        .feature-left .blue-thing {
-            z-index: 1;
-        }
-
-    /* ============= */
-    .article-1 {
-        margin-top: 300px;
-    }
+        .f-img {z-index: 10;}
+        .feature-left .blue-thing {z-index: 1;}
+/* ============= */
+    .article-1 {margin-top: 300px;}
     .extention-cards {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    /* ============= */
-
-    .sing-form {
-        flex-direction: column;
-    }   
+/* ============= */
+    .sing-form {flex-direction: column;}
         .error-wr {
             width: 100%;
             margin-bottom: 10px;
         }
         
-        .error-wr input {
-            width: 100%;
-        }
-        .error-wr input:focus::placeholder {
-            color: rgb(0, 0, 0);
-        }
-        .submit {
-            width: 100%;
-        }
+        .error-wr input {width: 100%;}
+        .submit {width: 100%;}
 
-    /* ============= */
+/* ============= */
     footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     .footer-wr {
         flex-direction: column;
         align-items: center; 
         margin: 0;
     }
-        .footer-wr img {
-            width: 12em;
-        }
+        .footer-wr img {width: 12em;}
         .footer-wr li {
             display: list-item;
             margin: 0;
@@ -651,15 +576,11 @@ footer {
         margin-top: 50px;
         width: 120px;
     }
-    .footer-icons img {
-        margin: 0;
-    }
+    .footer-icons img {margin: 0;}
 }
 
 @media(max-width: 700px) {
-    nav .nav-list {
-        display: none;
-    }
+    nav .nav-list {display: none;}
     nav .hamburger {
         display: block;
         cursor: pointer;
@@ -668,7 +589,6 @@ footer {
 
 
 @media (max-width: 560px) {
-    
     h1 {
         font-size: 30px;
         text-align: center;
@@ -678,35 +598,22 @@ footer {
         font-size: 15px;
         line-height: 25px !important;
     }
-    header {
-        max-width: 311px;
-    }
-    .right-part {
-        max-width: 311px;
-    }
+    header {max-width: 311px;}
+
+    .right-part {max-width: 311px;}
     .right-part img {
         right: 25px;
         width: 20em;
     }
-    .right-part .blue-thing {
-        height: 190px;
-    }
-    .left-part .btn-1{
-        margin-bottom: 10px;
-    }
+    .right-part .blue-thing {height: 190px;}
+    .left-part .btn-1{margin-bottom: 10px;}
     .left-part .btns button{
         width: 10em;
         padding: 1em;
     }
-    
-
-    article {
-        max-width: 311px;
-    }
-
-    main {
-        max-width: 311px;
-    }
+    article {max-width: 311px;}
+    main {max-width: 311px;}
+ 
     .feature-left img{
         width: 300px;
         left: 120px;
@@ -716,16 +623,11 @@ footer {
         height: 200px;
         z-index: 1;
     }
-
     .faq {
         margin: 0 auto;
         max-width: 311px;
     }
+    .sing-up-wr {padding: 0 20px;}
+    .sing-up h2 {font-size: 26px;}
 
-    .sing-up-wr {
-        padding: 0 20px;
-    }
-    .sing-up h2 {
-        font-size: 26px;
-    }
 }
