@@ -57,6 +57,7 @@ const submit = document.querySelector('.submit');
 const modal = document.querySelector('.modal')
 const hamburger =  document.querySelector('.hamburger');
 const closeMenu = document.querySelector('.close');
+const modalLink = document.querySelector('.modal-link');
 
 // ============================================
 function openFeature() {
@@ -136,6 +137,9 @@ submit.addEventListener('click', checkEmail);
 hamburger.addEventListener('click', openModal)
 
 closeMenu.addEventListener('click', closeModal)
+
+modalLink.addEventListener('click' ,closeModal)
+
 })()
 
 
