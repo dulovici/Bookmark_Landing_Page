@@ -288,11 +288,12 @@ main {
 
     /* DYNAMIC CLASSES */
     .open .ques p {
-        font-weight: 600;
+        font-weight: 500;
+        color: black;
     }
     .open .ques img {
         transform: scaleY(-1);
-        filter: invert(37%) sepia(70%) saturate(991%) hue-rotate(310deg) brightness(100%) contrast(100%);
+        filter: invert(46%) sepia(74%) saturate(3431%) hue-rotate(333deg) brightness(110%) contrast(96%);
     }
     .open .answ {display: block;}
 
@@ -415,15 +416,13 @@ footer {
     margin-right: 165px;
     display: flex;
     align-items: center;
+    gap: 50px;
 }
 .footer-icons img:hover {
-    filter: invert(37%) sepia(70%) saturate(991%) hue-rotate(310deg) brightness(100%) contrast(100%);
+    filter: invert(46%) sepia(74%) saturate(3431%) hue-rotate(333deg) brightness(110%) contrast(96%);
 }
-.footer-icons img {
-    margin-left: 15px;
-    cursor: pointer;
-}
-
+.footer-icons img {cursor: pointer;}
+    
 /* MODAL */
 .modal {
     display: none;
