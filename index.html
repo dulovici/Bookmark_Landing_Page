@@ -11,6 +11,152 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Main</h1>
+<div class="global">
+    <nav>
+        <div class="nav-wr">
+            <img src="./images/logo-bookmark.svg" alt="">
+            <ul class="nav-list">
+                <li><a href="#features">FEATURS</a></li>
+                <li>PRICING</li>
+                <li>CONTACT</li>
+                <li class="login">LOGIN</li>
+            </ul>
+            <img class="hamburger" src="./images/icon-hamburger.svg" alt="">
+        </div>
+    </nav>
+
+    <header>
+        <div class="left-part text">
+            <h1>A Simple Bookmark <br> Manager</h1>
+            <p>A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.</p>
+            <div class="btns">
+                <button class="btn-1">Get it on Chrome</button>
+                <button class="btn-2">Get it on Firefox</button>
+            </div>
+        </div>
+        <div class="right-part art">
+            <img src="./images/illustration-hero.svg" alt="">
+            <div class="blue-thing"></div>
+        </div>
+    </header>
+
+    <article>
+        <h1 id="features">Features</h1>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+    </article>
+
+    <div class="feature-tabs">
+        <a class='ftr bookmarking active'>Simple Bookmarking</a>
+        <a class='ftr searching'>Speedy Searching</a>
+        <a class='ftr shearing'>Easy Shearing</a>
+    </div>
+
+    <main>
+        <div class="feature-right text">
+            <h1 class="f-title">Bookmark in one click</h1>
+            <p class="f-text">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.</p>
+            <div class="btns">
+                <button class="btn-1">More Info</button>
+            </div>
+        </div>
+        <div class="feature-left art">
+            <img class="f-img" src="./images/illustration-features-tab-1.svg" alt="">
+            <div class="blue-thing"></div>
+        </div>
+    </main>
+
+    <article class="article-1">
+        <h1>Download the extension</h1>
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.</p>
+    </article>
+
+    <div class="extention-cards">
+        <div class="card c1">
+            <img src="./images/logo-chrome.svg" alt="">
+            <h3>Add To Chrome</h3>
+            <p>Minnimum version 62</p>
+            <button class="blue-btn">Add & Install Extension</button>
+        </div>
+        <div class="card c2">
+            <img src="./images/logo-firefox.svg" alt="">
+            <h3>Add To Fire Fox</h3>
+            <p>Minnimum version 55</p>
+            <button class="blue-btn">Add & Install Extension</button>
+        </div>
+        <div class="card c3">
+            <img src="./images/logo-opera.svg" alt="">
+            <h3>Add To Opera</h3>
+            <p>Minnimum version 46</p>
+            <button class="blue-btn">Add & Install Extension</button>
+        </div>
+    </div>
+
+    <div class="faq-wr">
+        <article>
+            <h1>Frequently Asked Questions</h1>
+            <p>Here are some of our FAQs. If you have any other questions you’d like 
+            answered please feel free to email us.</p>
+        </article>
+
+        <ul class="faq">
+            <!-- RENDER FROM JS -->
+        </ul>
+
+        <button class="blue-btn">More Info</button>
+    </div>
+
+    <section class="sing-up-wr">
+        <div class="sing-up">
+            <p>35.000+ ALREADY JOINED</p>
+            <h2>Stay up-to-date with what <br> we're doing</h2>
+            <div class="sing-form">
+                <div class="error-wr">
+                    <input class="email" type="text" placeholder="Enter your email adress">
+                    <p class="err-msg">Whoops, make sure it's an email</p>
+                </div>
+                <button class="submit">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wr">
+            <img src="./images/logo-bookmark-light.svg" alt="">
+            <ul class="footer-list">
+                <li><a  href="#features">FEATURS</a></li>
+                <li>PRICING</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        <div class="footer-icons">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+        </div>
+    </footer>
+</div>
+
+
+<div class="modal">
+    <div class="modal-menu">
+        <div class="hdr">
+            <img src="./images/logo-bookmark-light.svg" alt="">
+            <div class="close"><span class="close-modal">&times;</span></div>
+        </div>
+        <ul class="modal-list">
+            <li class="modal-link"><a href="#features">FEATURS</a></li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+        </ul>
+        <button>LOGIN</button>
+        <div class="modal-icons">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+        </div>
+    </div>
+</div>
 </body>
 </html>
